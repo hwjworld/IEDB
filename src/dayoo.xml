@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="GBK"?>
+
+<iedb>
+	<version>20080313</version>
+	<table>
+		<!-- 多个表以;号分隔 -->
+		<table-name>releaselib</table-name>
+		<primarykey></primarykey>
+	</table>
+	<todb>
+		<ip>10.1.5.66</ip>
+		<port>1521</port>
+		<service-name>cms40</service-name>
+		<username>cmsuser</username>
+		<pwd>xyz</pwd>
+	</todb>
+	<fromdb>
+		<ip>10.1.5.65</ip>
+		<port>1521</port>
+		<service-name>cms40</service-name>
+		<username>cmsuser</username>
+		<pwd>xyz</pwd>
+	</fromdb>
+	<!-- 最多可以开几个连接,源数据库 与 目标数据库 -->
+	<conn-limit>20</conn-limit>
+	<!-- 一个连接负责最多导多少条记录 -->
+	<record-limit>3000</record-limit>
+</iedb>
